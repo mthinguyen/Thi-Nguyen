@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "imageUrl": "../covers/trackStacks.jpg",
+        "title": "TrackStacks",
+        "alt": "TrackStacks Project Cover"
+    },
+
+    {
+        "id": 2,
+        "imageUrl": "../covers/tinyPaws.jpg",
+        "title": "TinyPaws",
+        "alt": "TinyPaws Project Cover"
+    },
+
+    {
+        "id": 3,
+        "imageUrl": "../covers/moreIs.jpg",
+        "title": "More Is More",
+        "alt": "More Is More Project Cover"
+    },
+
+    {
+        "id": 4,
+        "imageUrl": "../covers/mindFull.jpg",
+        "title": "MindFull",
+        "alt": "MindFull Project Cover"
+    },
+
+    {
+        "id": 5,
+        "imageUrl": "../covers/caseClosed.jpg",
+        "title": "Case Closed",
+        "alt": "Case Closed Project Cover"
+    }
+
+]

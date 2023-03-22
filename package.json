@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.2.3",
+    "framer-motion": "^10.3.1",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3",
+    "styled-components": "^5.3.8"
+  }
+}

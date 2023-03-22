@@ -1,0 +1,293 @@
+@font-face {
+  font-family: 'Baguede';
+  src: url('../public/fonts/Baguede-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Golos';
+  src: url('../public/fonts/GolosText-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Golos Bold';
+  src: url('../public/fonts/GolosText-Bold.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'General Sans';
+  src: url('../public/fonts/GeneralSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'General Sans Bold';
+  src: url('../public/fonts/GeneralSans-Bold.ttf');
+  font-style: bold;
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F6F4;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 12rem;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.introCam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* height: 50vh; */
+  background-color: #86BA90;
+  border-radius: 60pt;
+}
+
+.introTextAndCamera {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.camera {
+  z-index: 1;
+  animation-name: animatePop;
+  animation-duration: 600ms;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 1.5rem;
+}
+
+/* .workBlock {
+  z-index: 0;
+  top: 60rem;
+  position: absolute;
+  background-color: #b6f4f4;
+  height: 14rem;
+  border-radius: 60pt;
+} */
+
+.cameraButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  color: #363630;
+  font-family: Baguede;
+  background-color: #F8F6F4;
+  font-size: 16px;
+  padding: 8pt;
+  padding-left: 18pt;
+  padding-right: 18pt;
+  border-radius: 28pt;
+  /* margin-left: 8.5rem; */
+  border: none;
+  transition: 300ms ease;
+}
+
+.cameraButton:hover {
+  background-color: #363630;
+  color: #FFCC32;
+  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 70%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #86BA90;
+  }
+}
+
+.typingText {
+  color: #363630;
+  font-size: 68pt;
+  /* font-family: 'General Sans Bold'; */
+  font-family: 'Baguede';
+  padding-right: 8pt;
+  animation:
+    typing 3s steps(20, end),
+    blink-caret .75s step-end infinite;
+  overflow: hidden;
+  border-right: .1em solid #363630;
+  white-space: nowrap;
+  margin: 2 auto;
+  text-align: left;
+}
+
+.littleFlower {
+  position: absolute;
+  left: 11%;
+  top: 34%;
+  width: 45px;
+  height: 45px;
+  transform: rotate(-15deg);
+  z-index: 0;
+  transition: 800ms ease infinite;
+  animation: flying 5s linear infinite;
+  animation-direction: alternate;
+}
+
+.littleFlower2 {
+  position: absolute;
+  right: 42%;
+  top: 60%;
+  /* left: 1100px;
+  top: 700px; */
+  width: 65px;
+  height: 65px;
+  transform: rotate(-15deg);
+  z-index: 0;
+  transition: 800ms ease infinite;
+  animation-direction: alternate;
+}
+
+@keyframes flying {
+  from {
+    transform: translateY(0pt);
+  }
+
+  to {
+    transform: translateY(10pt);
+  }
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+@keyframes animatePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.introWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+
+.introAbout {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.introAboutText {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40rem;
+  /* padding-left: 3rem;; */
+}
+
+.inlineDiv {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  width: 40rem;
+}
+
+.introAboutPhoto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
