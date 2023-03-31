@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { handleScroll } from '../Scroll/scroll';
 import { useState, useEffect } from 'react';
+import MusicButton from '../Button/musicButton';
 
 const NavContainer = styled.div`
   display: flex;
@@ -106,22 +107,23 @@ const NavBar = () => {
       <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
       <NavList>
         <NavItem>
-          <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
+          <NavLi onClick={() => handleScroll('workSection')}>Home</NavLi>
         </NavItem>
         <NavItem>
-          <NavLi onClick={() => handleScroll('workSection')}>Gallery</NavLi>
+          <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
         </NavItem>
         <NavItem>
           <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
         </NavItem>
       </NavList>
 
-      <NavButton onClick={() => handleScroll('contactSection')}>
+      {/* <NavButton onClick={() => handleScroll('contactSection')}>
         <IconLi
           backgroundImage="../../icons/volume.png"
           hoverBackgroundImage="../../icons/volumeBlack.png"
         />
-        Sound</NavButton>
+        Sound</NavButton> */}
+      <MusicButton></MusicButton>
     </NavContainer>
   );
 };
