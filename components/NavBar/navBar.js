@@ -12,7 +12,7 @@ const NavContainer = styled.div`
   padding-bottom: 2rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  // position: fixed;
+  position: fixed;
   position: absolute;
   top: 0;
   z-index: 100;
