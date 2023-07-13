@@ -93,7 +93,7 @@ export default function Home() {
               <br />
 
 
-              <Paragraph
+              {/* <Paragraph
                 text=" Throughout my studies, I honed my skills in user research, prototyping, 
               and visual design. I also had the opportunity to work on several real-world projects, including 
               mobile apps like TrackStacks and MindFull, websites like TinyPaws, and many other visual design projects. 
@@ -101,7 +101,7 @@ export default function Home() {
               the needs and preferences of users and aligning those with the goals of the project.">
               </Paragraph>
               <br />
-              <br />
+              <br /> */}
 
 
               <Paragraph
