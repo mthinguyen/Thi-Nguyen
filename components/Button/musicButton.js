@@ -55,7 +55,7 @@ const MusicButton = () => {
   return (
     <Button onClick={isPlaying ? stopMusic : playMusic}>
       <Icon backgroundImage={isPlaying ? "../../icons/volumePlay.png" : "../../icons/volume.png"}/>
-      Sound
+      Music
     </Button>
   );
 };
