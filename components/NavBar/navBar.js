@@ -54,7 +54,7 @@ const NavLink = styled.div`
 const IconLi = styled.div`
   font-family: Golos;
   padding: 4pt;
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
   transition: linear 100ms;
   background-image: ${props => props.backgroundImage ? `url(${props.backgroundImage})` : "none"};
