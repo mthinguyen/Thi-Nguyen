@@ -111,7 +111,7 @@ const NavBar = () => {
       <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
       <NavList>
         <NavItem>
-          <NavLi onClick={() => handleScroll('workSection')}>Home</NavLi>
+          <NavLi onClick={() => handleScroll('homeSection')}>Home</NavLi>
         </NavItem>
         <NavItem>
           <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
