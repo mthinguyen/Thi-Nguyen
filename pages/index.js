@@ -8,13 +8,8 @@ import Footer from '../components/Footer/footer';
 import BigPara from '../components/Text/bigPara';
 import Gallery from '../components/Gallery/gallery';
 import HeaderWork from '../components/Text/headerWork';
-import HeaderArtist from '../components/Text/headerArtist';
-import HeaderLearner from '../components/Text/headerLearner';
-import HeaderAbout from '../components/Text/headerAbout';
 import Paragraph from '../components/Text/para';
-import Cursor from '../components/Cursor/cursor';
-import IconBar from '../components/IconBar/iconBar';
-import ContactList from '../components/emailPhone/contactList';
+
 
 
 
@@ -34,9 +29,11 @@ export default function Home() {
 
 
         <div className={styles.introWork}>
-          <div><HeaderWork></HeaderWork></div>
-          <div><HeaderArtist></HeaderArtist></div>
-          <div><HeaderLearner></HeaderLearner></div>
+          <HeaderWork text1="Passionate" text2="Designer," color1="#363630" color2="#e77cae" />
+
+          {/* reuse HeaderWork with different text content and colors */}
+          <HeaderWork text1="Creative" text2="Artist," color1="#363630" color2="#FFCC32" />
+          <HeaderWork text1="Continuos" text2="Learner" color1="#363630" color2="#86BA90" />
         </div>
 
         <Gallery></Gallery>

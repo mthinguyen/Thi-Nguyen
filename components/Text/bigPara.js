@@ -13,7 +13,7 @@ padding-right: 6rem;
 const BigParaText = styled.text`
 color: #363630;
 text-align: left;
-font-size: 18px;
+font-size: 16px;
 line-height: 30px;
 font-family: General Sans;
 font-family: Golos;
