@@ -46,7 +46,7 @@ const ClickableImage = () => {
 };
 
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
@@ -70,11 +70,6 @@ export default function Home() {
 
         </div>
 
-        <div className={styles.introWork} id="workSection">
-          <div className={styles.workBlock}></div>
-          <div><HeaderWork></HeaderWork></div>
-          <Gallery></Gallery>
-        </div>
 
         <div className={styles.introAbout} id="aboutSection">
           <div className={styles.introAboutText}>
