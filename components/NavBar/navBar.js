@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { handleScroll } from '../Scroll/scroll';
 import { useState, useEffect } from 'react';
 import MusicButton from '../Button/musicButton';
+import Link from 'next/link';
 
 const NavContainer = styled.div`
   display: flex;
@@ -103,28 +104,51 @@ gap: .5rem;
 
 const NavBar = () => {
   return (
+
+    // In page scrolling
+
+    // <NavContainer>
+    //   <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
+    //   <NavList>
+    //     <NavItem>
+    //       <NavLi onClick={() => handleScroll('workSection')}>Home</NavLi>
+    //     </NavItem>
+    //     <NavItem>
+    //       <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
+    //     </NavItem>
+    //     <NavItem>
+    //       <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
+    //     </NavItem>
+    //   </NavList>
+
+
+    //   <MusicButton></MusicButton>
+    // </NavContainer>
+
+    // Routing navigation
+
     <NavContainer>
-      <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
+      <NavLink >Thi Nguyen.</NavLink>
       <NavList>
         <NavItem>
-          <NavLi onClick={() => handleScroll('workSection')}>Home</NavLi>
+          <NavLi >Home
+            
+          </NavLi>
         </NavItem>
         <NavItem>
-          <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
+          <NavLi >Work</NavLi>
         </NavItem>
         <NavItem>
-          <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
+          <NavLi >About
+          <Link href="../pages/about.js"> </Link>
+          </NavLi>
         </NavItem>
       </NavList>
 
-      {/* <NavButton onClick={() => handleScroll('contactSection')}>
-        <IconLi
-          backgroundImage="../../icons/volume.png"
-          hoverBackgroundImage="../../icons/volumeBlack.png"
-        />
-        Sound</NavButton> */}
+
       <MusicButton></MusicButton>
     </NavContainer>
+
   );
 };
 
