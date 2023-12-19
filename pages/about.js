@@ -67,9 +67,7 @@ export default function Home() {
             <BigPara></BigPara>
           </div>
 
-          <div className={styles.introCam}>
-            <ClickableImage></ClickableImage>
-          </div>
+
         </div>
 
         <div className={styles.introWork} id="workSection">
@@ -83,7 +81,7 @@ export default function Home() {
             <HeaderAbout></HeaderAbout>
             <div className={styles.inlineDiv}>
               <Paragraph
-                text="About! I'm Thi, and my name is pronounced like Tea &#127861;.
+                text="Hello again! I'm Thi, and my name is pronounced like Tea &#127861;.
               I recently graduated from the Digital Design and Development program at BCIT.
               As an UX/UI designer, I am passionate about creating intuitive and visually compelling digital 
               experiences that engage and delight users. I'm currently volunteering at Literacy Now Burnaby designing

@@ -140,7 +140,7 @@ const NavBar = () => {
         </NavItem>
         <NavItem>
           <NavLi >About
-          <Link href="../../pages/about.js"> </Link>
+          <Link href="/about.js"> </Link>
           </NavLi>
         </NavItem>
       </NavList>
