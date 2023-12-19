@@ -132,16 +132,18 @@ const NavBar = () => {
       <NavList>
         <NavItem>
           <NavLi >Home
-            
+
           </NavLi>
         </NavItem>
         <NavItem>
           <NavLi >Work</NavLi>
         </NavItem>
         <NavItem>
-          <NavLi >About
-          <Link href="/about.js"> </Link>
-          </NavLi>
+
+          <Link href="/about.js">
+            <NavLi>About</NavLi>
+          </Link>
+
         </NavItem>
       </NavList>
 
