@@ -1,4 +1,24 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const flyUp = keyframes`
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
 
 const HeaderCont = styled.div`
   display: flex;
@@ -25,7 +45,10 @@ const HeaderText = styled.h2`
   display: inline-block;
   font-family: ${({ fontFamily }) => fontFamily};
   color: ${({ color }) => color};
+  animation: ${fadeIn} 1s ease-in-out, ${flyUp} 0.5s ease-in;
 `;
+
+
 
 const HeaderWork = ({ text1, text2, color1, color2 }) => {
   return (
