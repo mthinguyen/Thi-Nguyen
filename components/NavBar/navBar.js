@@ -107,49 +107,24 @@ const NavBar = () => {
 
     // In page scrolling
 
-    // <NavContainer>
-    //   <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
-    //   <NavList>
-    //     <NavItem>
-    //       <NavLi onClick={() => handleScroll('workSection')}>Home</NavLi>
-    //     </NavItem>
-    //     <NavItem>
-    //       <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
-    //     </NavItem>
-    //     <NavItem>
-    //       <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
-    //     </NavItem>
-    //   </NavList>
-
-
-    //   <MusicButton></MusicButton>
-    // </NavContainer>
-
-    // Routing navigation
-
     <NavContainer>
-      <NavLink >Thi Nguyen.</NavLink>
+      <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
       <NavList>
         <NavItem>
-          <NavLi >Home
-
-          </NavLi>
+          <NavLi onClick={() => handleScroll('workSection')}>Home</NavLi>
         </NavItem>
         <NavItem>
-          <NavLi >Work</NavLi>
+          <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
         </NavItem>
         <NavItem>
-
-          <Link href="/about.js">
-            <NavLi>About</NavLi>
-          </Link>
-
+          <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
         </NavItem>
       </NavList>
 
 
       <MusicButton></MusicButton>
     </NavContainer>
+
 
   );
 };
