@@ -16,13 +16,13 @@ justify-content: flex-start;
 align-items: center;
 width: 69rem;
 gap: 1rem;
-padding-top: 8rem
+padding-top: 2rem
 `
 
 const Stroke = styled.div`
 background-image: url('../../graphics/strokeRow.gif');
-width: 250px;
-height: 50px;
+width: 220px;
+height: 40px;
 background-size: cover;
 `
 
@@ -31,20 +31,20 @@ const StrokeCont = styled.div`
 `
 
 const HeaderTextBlack = styled.h2`
-padding-top: 2rem;
+padding-top: 4rem;
 color: #363630;
 text-align: center;
-font-size: 68pt;
+font-size: 48pt;
 line-height: 50pt;
 font-family: Baguede;
 display: inline-block;
 `;
 
 const HeaderTextPink = styled.h2`
-padding-top: 2rem;
+padding-top: 4rem;
 color: #e77cae;
 text-align: center;
-font-size: 68pt;
+font-size: 48pt;
 line-height: 50pt;
 font-family: General Sans Bold;
 display: inline-block;
@@ -56,11 +56,11 @@ export default function HeaderAbout({ text }) {
         <Wrapper>
 
             <HeaderCont>
-                <HeaderTextBlack>About</HeaderTextBlack>
+                <HeaderTextBlack>Contact</HeaderTextBlack>
                 <HeaderTextPink>Me</HeaderTextPink>
             </HeaderCont>
 
-            <StrokeCont><Stroke></Stroke></StrokeCont>
+            {/* <StrokeCont><Stroke></Stroke></StrokeCont> */}
         </Wrapper>
     );
 };

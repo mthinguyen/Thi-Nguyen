@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { handleScroll } from '../Scroll/scroll';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const FootContainer = styled.div`
   display: flex;
@@ -67,6 +68,8 @@ padding-left: 18pt;
 padding-right: 18pt;
 border-radius: 32pt;
 transition: 300ms ease;
+font-size: 10pt;
+
 `
 
 const Footer = () => {
@@ -74,9 +77,9 @@ const Footer = () => {
     <FootContainer>
       <FootLink onClick={() => handleScroll('homeSection')}>Thi &#40;Tea &#127861;&#41;</FootLink>
 
-      <FootButton>&#169; 2023 Thi Nguyen</FootButton>
+      <FootButton>&#169; 2023 Thi Nguyen. Made with &#9829; in Vancouver</FootButton>
 
-      <FootList>
+      {/* <FootList>
         <FootItem>
           <FootLi onClick={() => handleScroll('homeSection')}>Home</FootLi>
         </FootItem>
@@ -89,6 +92,31 @@ const Footer = () => {
         <FootItem>
           <FootLi onClick={() => handleScroll('aboutSection')}>About</FootLi>
         </FootItem>
+      </FootList> */}
+
+
+      <FootList>
+
+      <FootItem>
+          <Link href="/">
+            <FootLi>Work </FootLi>
+          </Link>
+        </FootItem>
+
+
+        <FootItem>
+          <Link href="">
+            <FootLi>Love </FootLi>
+          </Link>
+        </FootItem>
+
+
+        <FootItem>
+          <Link href="/about">
+            <FootLi>About </FootLi>
+          </Link>
+        </FootItem>
+
       </FootList>
 
 

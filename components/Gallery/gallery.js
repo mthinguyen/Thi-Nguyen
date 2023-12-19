@@ -29,7 +29,7 @@ export default function Gallery() {
         <div className={styles.bigWrapper}>
             <img
                 className={styles.eyeBall}
-                src="../../graphics/sunflower.gif" width="100" height="100"
+                src="../../graphics/sunflower.gif" width="160" height="160"
             />
             <div className={styles.wrapper}>
 

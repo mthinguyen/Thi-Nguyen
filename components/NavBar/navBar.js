@@ -9,17 +9,19 @@ const NavContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  position: fixed;
+  // position: fixed;
   position: absolute;
   top: 0;
   z-index: 100;
   width: 100%;
   background-color: #F8F6F4;
   background-color: rgb(248,246,244, .8);
+
+
 `;
 
 const NavList = styled.ul`
@@ -105,20 +107,61 @@ gap: .5rem;
 const NavBar = () => {
   return (
 
-    // In page scrolling
+    // Navigation bar - In page scrolling
+
+    // <NavContainer>
+    //   <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
+    //   <NavList>
+    //     <NavItem>
+    //       <NavLi onClick={() => handleScroll('homeSection')}>Home</NavLi>
+    //     </NavItem>
+    //     <NavItem>
+    //       <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
+    //     </NavItem>
+    //     <NavItem>
+    //       <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
+    //     </NavItem>
+    //   </NavList>
+
+
+    //   <MusicButton></MusicButton>
+    // </NavContainer>
+
+
+    // Navigation bar - Routing
 
     <NavContainer>
-      <NavLink onClick={() => handleScroll('homeSection')}>Thi Nguyen.</NavLink>
+
+      <Link href="/">
+        <NavLink>Thi Nguyen.</NavLink>
+      </Link>
+
       <NavList>
         <NavItem>
-          <NavLi onClick={() => handleScroll('homeSection')}>Home</NavLi>
+          <Link href="/">
+            <NavLi>Work</NavLi>
+          </Link>
         </NavItem>
+
         <NavItem>
-          <NavLi onClick={() => handleScroll('workSection')}>Work</NavLi>
+          <Link href="">
+            <NavLi>Love</NavLi>
+          </Link>
         </NavItem>
+
         <NavItem>
-          <NavLi onClick={() => handleScroll('aboutSection')}>About</NavLi>
+          <Link href="/about">
+            <NavLi>About</NavLi>
+          </Link>
         </NavItem>
+
+        <NavItem>
+          <Link href="https://acrobat.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3A3588ab1a-82d4-3b04-b95e-ffd4df05cd55" target="_blank">
+            <NavLi>Resume</NavLi>
+          </Link>
+        </NavItem>
+
+
       </NavList>
 
 

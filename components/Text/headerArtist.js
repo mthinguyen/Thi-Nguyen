@@ -5,23 +5,12 @@ display: flex;
 flex-direction: row;
 justify-content: flex-start;
 align-items: flex-end;
-width: 69rem;
+width: 56rem;
 gap: 1rem;
 padding-bottom: 1.5rem;
-padding-top: 2rem;
-padding-left: 1.5rem;
-height: 45vh;
-`
-
-const Stroke = styled.div`
-background-image: url('../../graphics/stroke.gif');
-width: 50pt;
-height: 50pt;
-background-size: cover;
 `
 
 const HeaderTextBlack = styled.h2`
-padding-top: 4rem;
 color: #363630;
 text-align: center;
 font-size: 60pt;
@@ -30,9 +19,8 @@ font-family: Baguede;
 display: inline-block;
 `;
 
-const HeaderTextPink = styled.h2`
-padding-top: 4rem;
-color: #e77cae;
+const HeaderTextYellow = styled.h2`
+color: #FFCC32;
 text-align: center;
 font-size: 60pt;
 line-height: 50pt;
@@ -41,13 +29,12 @@ display: inline-block;
 `;
 
 
-export default function HeaderWork({text}) {
+export default function headerArtist({text}) {
     return (
 
         <HeaderCont>
-            <Stroke></Stroke>
-            <HeaderTextBlack>Passionate</HeaderTextBlack>
-            <HeaderTextPink>Designer,</HeaderTextPink>
+            <HeaderTextBlack>Creative</HeaderTextBlack>
+            <HeaderTextYellow>Artist,</HeaderTextYellow>
         </HeaderCont>
 
         

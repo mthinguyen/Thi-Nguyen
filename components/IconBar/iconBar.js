@@ -43,25 +43,25 @@ export default function IconBar() {
 
     return (
         <Cont>
-          <Link href="https://www.linkedin.com/in/thi-nguyen-2b4572216/">
+          <Link href="https://www.linkedin.com/in/thi-nguyen-2b4572216/" target="_blank">
             <IconLi 
             backgroundImage="../../icons/linkedin.png"
             hoverBackgroundImage="../../icons/linkedinYellow.png"
             />
             </Link>
-            <Link href="https://github.com/mthinguyen">
+            <Link href="https://github.com/mthinguyen" target="_blank">
             <IconLi 
             backgroundImage="../../icons/github.png" 
             hoverBackgroundImage="../../icons/githubYellow.png" 
             />
             </Link>
-            <Link href="https://dribbble.com/thinguyenn">
+            <Link href="https://dribbble.com/thinguyenn" target="_blank">
             <IconLi 
             backgroundImage="../../icons/dribble.png"
             hoverBackgroundImage="../../icons/dribbleYellow.png" 
             />
             </Link>
-            <Link href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:3588ab1a-82d4-3b04-b95e-ffd4df05cd55">
+            <Link href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:3588ab1a-82d4-3b04-b95e-ffd4df05cd55" target="_blank">
             <IconLi 
             backgroundImage="../../icons/cv.png"
             hoverBackgroundImage="../../icons/cvYellow.png" 
