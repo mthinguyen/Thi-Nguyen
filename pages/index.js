@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Cursor from '../components/Cursor/cursor';
 import React, { useState, useEffect } from 'react';
 import Router, { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
@@ -27,7 +26,6 @@ export default function Home() {
       </Head>
 
       <NavBar></NavBar>
-      <Cursor scaling={0.5}/>
 
       <main className={styles.main}>
         
