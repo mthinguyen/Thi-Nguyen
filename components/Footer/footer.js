@@ -14,6 +14,7 @@ const FootContainer = styled.div`
   padding-right: 10rem;
   bottom: 0;
   width: 100%;
+  z-index: 2;
 //   background-color: #FFCC32;
 
   width: 100%;
