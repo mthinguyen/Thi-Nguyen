@@ -10,8 +10,8 @@ const FootContainer = styled.div`
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
   bottom: 0;
   width: 100%;
   z-index: 2;

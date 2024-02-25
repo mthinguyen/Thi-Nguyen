@@ -1,72 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import styled, { keyframes } from 'styled-components'
-import styles from '../../styles/Gallery.module.css'
-import record from '../../data/projects.json'
-import { useState, useEffect } from 'react';
-import Router, { useRouter } from 'next/router';
-
-
-
-
+import styles from '../../styles/Gallery.module.css';
+import projects from '../../data/projects.json';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function Gallery() {
-
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const router = useRouter();
 
     const handleMouseEnter = (index) => {
         setHoveredIndex(index);
     };
+
     const handleMouseLeave = () => {
         setHoveredIndex(null);
     };
 
-    function handleClick() {
+    const handleClick = () => {
         router.push('/');
     };
 
     return (
         <div className={styles.bigWrapper}>
-            <img
+            {/* <img
                 className={styles.eyeBall}
                 src="../../graphics/sunflower.gif" width="160" height="160"
-            />
+            /> */}
             <div className={styles.wrapper}>
+                {projects.map((project, index) => (
+                    <div key={project.id} className={styles.galleryCont}>
 
-                {
-                    record.map((rec, index) => {
-                        return (
-                            <div key={rec.id} className={styles.galleryCont}>
-                                <img
-                                    src={rec.imageUrl}
-                                    className={index === hoveredIndex ? "item item--hovered" : "item"}
-                                    onMouseEnter={() => handleMouseEnter(index)} />
+                        
+                        <Link href={`/projects/${project.id}`}></Link>
 
-                                {/* <div className={styles.overlay}>
-                            {hoveredIndex === index && (
-                                <div className={styles.projectTitle}>
-                                    <p>{rec.title}</p>
-                                </div>
-                            )}
-                            </div> */}
 
-                                {hoveredIndex === index && (
-                                    <div className={styles.projectTitle}>
-                                        <p>{rec.title}</p>
-                                    </div>
-                                )}
-
+                        <img
+                            src={project.imageUrl}
+                            className={index === hoveredIndex ? `${styles.item} ${styles.itemHovered}` : styles.item}
+                            onMouseEnter={() => handleMouseEnter(index)}
+                            onMouseLeave={handleMouseLeave}
+                            onClick={handleClick}
+                        />
+                        {hoveredIndex === index && (
+                            <div className={styles.projectTitle}>
+                                <p>{project.title}</p>
                             </div>
-                        )
-                    })
-
-                }
+                        )}
+                    </div>
+                ))}
             </div>
         </div>
-    )
+    );
 }
-
-
-
-
-// export default Gallery;

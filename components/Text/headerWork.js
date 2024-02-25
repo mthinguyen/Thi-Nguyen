@@ -40,7 +40,7 @@ const Stroke = styled.div`
 
 const HeaderText = styled.h2`
   text-align: center;
-  font-size: 56pt;
+  font-size: 65pt;
   line-height: 50pt;
   display: inline-block;
   font-family: ${({ fontFamily }) => fontFamily};

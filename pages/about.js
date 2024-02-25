@@ -34,7 +34,7 @@ const ClickableImage = () => {
   
     return (
       <>
-        <Cursor scaling={scaling}> </Cursor>
+        {/* <Cursor scaling={scaling}> </Cursor> */}
         <div className={styles.camera}>
           <Image alt="polaroid camera and polaroid film, a portrait of myself in the film" className={styles.cameraPhoto} src={showSecondImage ? '/graphics/photo1.gif' : '/graphics/camera.png'} width="350" height="350" />
           <button

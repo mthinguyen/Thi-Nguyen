@@ -10,15 +10,17 @@ import Gallery from '../components/Gallery/gallery';
 import HeaderWork from '../components/Text/headerWork';
 import Paragraph from '../components/Text/para';
 import VideoBackground from '../components/backgroundVideo/bgVideo';
+import Cursor from '../components/Cursor/cursor';
 
 
 
 export default function Home() {
+  const [scaling, setscaling] = useState(false);
   return (
-    
+
     <>
       <Head>
-        
+
         <title>Thi Nguyen</title>
         <meta name="description" content="2023 Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,8 +30,7 @@ export default function Home() {
       <NavBar></NavBar>
 
       <main className={styles.main}>
-        
-
+        <Cursor scaling={scaling}> </Cursor>
         <div className={styles.introWork}>
           <HeaderWork text1="Passionate" text2="Designer," color1="#363630" color2="#e77cae" />
 
@@ -37,7 +38,7 @@ export default function Home() {
           <HeaderWork text1="Creative" text2="Artist," color1="#363630" color2="#FFCC32" />
           <HeaderWork text1="Continuos" text2="Learner" color1="#363630" color2="#86BA90" />
 
-          <VideoBackground />
+          {/* <VideoBackground /> */}
 
           <style jsx>{`
         .container {
@@ -47,11 +48,9 @@ export default function Home() {
           overflow: hidden;
         }
         .content-above-video {
-          /* Style your content above the video */
           z-index: 1;
         }
         .content-below-video {
-          /* Style your content below the video */
           z-index: 1;
         }
       `}</style>
