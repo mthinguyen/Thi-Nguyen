@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-// import styles from '../../styles/Gallery.module.css';
 import styles from '../../styles/Portfolio.module.css';
 import styled from 'styled-components';
+import React, { useState } from 'react';
+import Image from 'next/image';
 import projects from '../../data/projects.json';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -88,15 +87,6 @@ export default function Portfolio() {
                         <p></p>
                     </div>
                 </div>
-
-
-                {/* <div className={styles.galleryCont}>
-                    <img src="/covers/moreIs.jpg" />
-                    <div className={styles.projectTitle}>
-                        <p></p>
-                    </div>
-                </div> */}
-
 
 
             </div>
