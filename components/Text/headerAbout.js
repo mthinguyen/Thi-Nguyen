@@ -34,7 +34,7 @@ const HeaderTextBlack = styled.h2`
 padding-top: 4rem;
 color: #363630;
 text-align: center;
-font-size: 65pt;
+font-size: 58pt;
 line-height: 50pt;
 font-family: Baguede;
 display: inline-block;
@@ -44,7 +44,7 @@ const HeaderTextPink = styled.h2`
 padding-top: 4rem;
 color: #e77cae;
 text-align: center;
-font-size: 65pt;
+font-size: 58pt;
 line-height: 50pt;
 font-family: General Sans Bold;
 display: inline-block;

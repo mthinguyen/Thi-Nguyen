@@ -57,8 +57,7 @@ export default function Home() {
 
         </div>
 
-        {/* <Gallery></Gallery> */}
-        <Portfolio></Portfolio>
+        {/* <Portfolio></Portfolio> */}
 
       </main>
 
