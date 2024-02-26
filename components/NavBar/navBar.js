@@ -7,7 +7,6 @@ import Link from 'next/link';
 
 const Wrapper = styled.div`
 
-
 @media (max-width: 1024px) {
   display: flex;
   justify-content: flex-end;
@@ -194,7 +193,8 @@ const NavBar = () => {
             </NavItem>
 
             <NavItem>
-              <Link href='/about'>
+              <Link href='/about'> 
+              {/* <Link href='/projects/tinyPaw'>  */}
                 <NavLi>About</NavLi>
               </Link>
             </NavItem>

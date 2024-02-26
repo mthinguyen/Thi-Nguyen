@@ -7,10 +7,12 @@ import NavBar from '../components/NavBar/navBar';
 import Footer from '../components/Footer/footer';
 import BigPara from '../components/Text/bigPara';
 import Gallery from '../components/Gallery/gallery';
+import Portfolio from '../components/Gallery/portfolio';
 import HeaderWork from '../components/Text/headerWork';
 import Paragraph from '../components/Text/para';
 import VideoBackground from '../components/backgroundVideo/bgVideo';
 import Cursor from '../components/Cursor/cursor';
+// import Portfolio from '../components/Gallery/portfolio';
 
 
 
@@ -57,7 +59,8 @@ export default function Home() {
 
         </div>
 
-        <Gallery></Gallery>
+        {/* <Gallery></Gallery> */}
+        <Portfolio></Portfolio>
 
       </main>
 
