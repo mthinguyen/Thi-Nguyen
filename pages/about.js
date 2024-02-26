@@ -6,7 +6,6 @@ import styles from '../styles/Home.module.css';
 import NavBar from '../components/NavBar/navBar';
 import Footer from '../components/Footer/footer';
 import BigPara from '../components/Text/bigPara';
-import Gallery from '../components/Gallery/gallery';
 import HeaderWork from '../components/Text/headerWork';
 import HeaderAbout from '../components/Text/headerAbout';
 import Paragraph from '../components/Text/para';
