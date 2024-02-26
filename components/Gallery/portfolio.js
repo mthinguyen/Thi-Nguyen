@@ -45,7 +45,7 @@ export default function Portfolio() {
 
                 <div className={styles.galleryCont}>
                         <Link href="/projects/tinyPaw">
-                            <ProjectCover className='projectCover' src="/covers/TrackStacks.jpg" />
+                            <ProjectCover src="/covers/TrackStacks.jpg" />
                         </Link>
                     <div className={styles.projectTitle}>
                         <p></p>
@@ -54,7 +54,7 @@ export default function Portfolio() {
 
                 <div className={styles.galleryCont}>
                         <Link href="/projects/tinyPaw">
-                            <ProjectCover className='projectCover' src="/covers/moreIs.jpg" />
+                            <ProjectCover src="/covers/moreIs.jpg" />
                         </Link>
                     <div className={styles.projectTitle}>
                         <p></p>
@@ -63,7 +63,7 @@ export default function Portfolio() {
 
                 <div className={styles.galleryCont}>
                         <Link href="/projects/tinyPaw">
-                            <ProjectCover className='projectCover' src="/covers/MindFull.jpg" />
+                            <ProjectCover src="/covers/MindFull.jpg" />
                         </Link>
                     <div className={styles.projectTitle}>
                         <p></p>
@@ -72,7 +72,7 @@ export default function Portfolio() {
 
                 <div className={styles.galleryCont}>
                         <Link href="/projects/tinyPaw">
-                            <ProjectCover className='projectCover' src="/covers/TinyPaws.jpg" />
+                            <ProjectCover src="/covers/TinyPaws.jpg" />
                         </Link>
                     <div className={styles.projectTitle}>
                         <p></p>
