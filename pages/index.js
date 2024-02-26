@@ -23,8 +23,8 @@ export default function Home() {
         <meta name="description" content="2023 Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/favicon.png" />
-        <link rel="preload" href="global.css" as="style"></link>
-        <link rel="stylesheet" href="styles.css?v=1.0"></link>
+        {/* <link rel="preload" href="global.css" as="style"></link>
+        <link rel="stylesheet" href="styles.css?v=1.0"></link> */}
       </Head>
 
       <NavBar></NavBar>

@@ -1,34 +1,34 @@
 @font-face {
   font-family: 'Baguede';
-  src: url('../public/fonts/Baguede-Regular.ttf');
+  src: url('/fonts/Baguede-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Golos';
-  src: url('../public/fonts/GolosText-Regular.ttf');
+  src: url('/fonts/GolosText-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Golos Bold';
-  src: url('../public/fonts/GolosText-Bold.ttf');
+  src: url('/fonts/GolosText-Bold.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'General Sans';
-  src: url('../public/fonts/GeneralSans-Regular.ttf');
+  src: url('/fonts/GeneralSans-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'General Sans Bold';
-  src: url('../public/fonts/GeneralSans-Bold.ttf');
+  src: url('/fonts/GeneralSans-Bold.ttf');
   font-style: bold;
   font-weight: 600;
 }
